@@ -15,7 +15,7 @@ app.use(cors({
 })); 
 app.use('/', router);
 
-const portApp = process.env.APP_PORT || 3000;
+const portApp = process.env.APP_PORT || 5000;
 console.log('>>>>>>', process.env)
 app.listen(portApp, () => {
   // eslint-disable-next-line no-console
