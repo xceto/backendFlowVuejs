@@ -16,8 +16,10 @@ app.use(cors({
 app.use('/', router);
 
 const portApp = process.env.APP_PORT || 5000;
+const LOCAL_ADDRESS= '0.0.0.0';
+
 console.log('>>>>>>', process.env)
-app.listen(portApp, () => {
-  // eslint-disable-next-line no-console
-  console.log(`App listening on port ${portApp}`);
+server.listen(PORT, LOCAL_ADDRESS, () => {
+  const address = server.address();
+  console.log('server listening at', address);
 });
