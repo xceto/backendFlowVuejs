@@ -15,7 +15,7 @@ app.use(cors({
 })); 
 app.use('/', router);
 
-const portApp = process.env.APP_PORT || 5000;
+const portApp = process.env.PORT || 5000;
 
 console.log('>>>>>>', process.env)
 app.listen(portApp, () => {
